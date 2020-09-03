@@ -1,0 +1,30 @@
+.site-footer{
+    position: relative;
+    max-height: 40vh;
+    background-color: whitesmoke;
+    // background-color: #4b4c4d2f;
+    // background-color: rgba(0, 0, 0, 0.637);
+    // background-color: #e0727d;
+
+    &__h2 {
+        // position: absolute;
+        padding-top: 3rem;
+        // color: whitesmoke;
+        color: black;
+    }
+
+    &__address{
+        color: black;
+        // color: whitesmoke;
+        text-align: center;
+        padding-top: 3rem;
+        font-size: 1.8rem;
+        // margin-bottom: 2rem;
+    }
+
+    &__copyright{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}

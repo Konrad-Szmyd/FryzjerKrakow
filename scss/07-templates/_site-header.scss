@@ -1,0 +1,93 @@
+.site-header{
+    // background: url(../assets/img/headerBg.jpg) center/cover no-repeat;
+    // background: url(../assets/img/desktop3.jpg) center/cover no-repeat;
+    background: url(../assets/img/testheaderdesktop2.jpg) center/cover no-repeat;
+    font-family: 'Domine', serif;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    //header for iphone
+    @include medium1156 {
+        background: url(../assets/img/medium10.jpg) center/cover no-repeat;
+    } 
+
+    @include medium {
+        background: url(../assets/img/testheadertelefon.jpg) center/cover no-repeat;
+    } 
+
+    &__nav{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        
+        
+    }
+
+    &__logo{
+        position: absolute;
+        font-size: 3.2rem;
+        padding-top: 2*$grid-base;
+        padding-left: 2*$grid-base;
+        color: whitesmoke;
+        text-decoration: none;
+        z-index: 999;
+
+        &:hover{
+            color: #e0727ddc;
+        }
+
+        @include medium880 {
+            display: none;
+        }
+    }
+
+    &__hamburgerMenu{
+        position: absolute;
+        font-size: 3.2rem;
+        padding-top: 2*$grid-base;
+        left: 50%;
+        transform: translate(-50%);
+        color: whitesmoke;
+        text-decoration: none;
+        display: none;
+        z-index: 999;
+
+        @include medium{
+            display: block;
+        }
+    }
+
+    // &__h1{
+    //         position: absolute;
+    //         top: 70%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         // background-color:rgb(207, 181, 59);
+    //         // color:whitesmoke;
+    //         color:rgba(207, 181, 59,0.7);
+
+    //         font-size: 7rem;
+    //         padding: 2rem;
+    //         border-radius: .4rem;
+    //         width: 70%;
+    //         text-align: center;
+    //         // box-shadow: 0 0 40px 5px rgba(207, 181, 59,0.3);
+    //         @include medium1156{
+    //             font-size: 6rem;
+    //         }
+    //         @include medium880{
+    //             font-size: 5rem;
+    //         }
+    //         @include medium {
+    //             font-size: 4.2rem;
+    //             padding-top: 6rem;
+    //             margin-top: 6rem;
+    //             top: 60%;
+    //         }
+            
+                
+        
+        
+    // }
+
+}

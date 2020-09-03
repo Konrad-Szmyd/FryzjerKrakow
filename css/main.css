@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: 'Montserrat', cursive; }
+
+p {
+  padding: 20px;
+  font-size: 1.8rem;
+  line-height: 2.8rem; }
+  @media all and (max-width: 880px) {
+    p {
+      font-size: 1.2rem; } }
+
+.col {
+  width: 100%; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+  @media all and (max-width: 768px) {
+    .container {
+      max-width: 74rem; } }
+  @media all and (min-width: 1240px) {
+    .container {
+      max-width: 112rem; } }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 15px; }
+  @media all and (max-width: 768px) {
+    .row {
+      flex-direction: column; } }
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.199);
+  display: flex;
+  height: 7rem;
+  justify-content: flex-end;
+  font-family: 'Times New Roman', Times, serif; }
+  @media all and (max-width: 880px) {
+    .nav {
+      justify-content: space-evenly;
+      height: 6rem; } }
+  .nav__item {
+    font-size: 3.2rem;
+    transition: all .25s; }
+    @media all and (max-width: 1156px) {
+      .nav__item {
+        font-size: 2.7rem; } }
+    @media all and (max-width: 880px) {
+      .nav__item {
+        font-size: 2.2rem; } }
+    @media all and (max-width: 768px) {
+      .nav__item {
+        display: none; } }
+    .nav__item:hover {
+      font-size: 3.7rem; }
+      @media all and (max-width: 1156px) {
+        .nav__item:hover {
+          font-size: 3.2rem; } }
+      @media all and (max-width: 880px) {
+        .nav__item:hover {
+          font-size: 2.7rem; } }
+  .nav__link {
+    z-index: 99999999999;
+    font-family: 'Domine', serif;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    text-decoration: none;
+    display: block;
+    color: whitesmoke; }
+    .nav__link:hover {
+      color: #e0727ddc;
+      text-decoration: none; }
+
+.hamburgerMenu {
+  background-color: #ad76763a;
+  height: 24rem;
+  display: none;
+  border-bottom: 1px solid black; }
+  .hamburgerMenu__item {
+    height: 6rem;
+    padding: 2rem;
+    border-top: 1px solid black; }
+  .hamburgerMenu__link {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-decoration: none; }
+
+.heading--h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3.5rem;
+  text-align: center; }
+.heading--h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.8rem; }
+
+.offerContainer {
+  text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem auto; }
+  .offerContainer__h3 {
+    width: 100%; }
+  .offerContainer__box {
+    width: 40%;
+    margin: 1rem 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #e0727d44; }
+    @media all and (max-width: 880px) {
+      .offerContainer__box {
+        width: 100%; } }
+
+.galleryBox {
+  position: relative;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  @media all and (max-width: 1156px) {
+    .galleryBox {
+      margin-top: 2rem;
+      flex-wrap: wrap; } }
+  .galleryBox__Item {
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 0px 0px 20px 1px #f7b8b4; }
+
+.form-box {
+  display: flex;
+  justify-content: center; }
+
+.form {
+  width: 45%;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  @media all and (max-width: 768px) {
+    .form {
+      width: 100%; } }
+  .form__label {
+    font-size: 1.8rem; }
+  .form__item {
+    color: black;
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.4rem;
+    background-color: #e0727d3d;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    border: .1rem solid #ad7676;
+    border-radius: .4rem;
+    outline: 0;
+    resize: none;
+    font-family: inherit; }
+    .form__item:focus {
+      background-color: #e0727d15;
+      color: inherit; }
+    .form__item[type="submit"]:hover {
+      background-color: #e0727d15; }
+
+.site-header {
+  background: url(../assets/img/testheaderdesktop2.jpg) center/cover no-repeat;
+  font-family: 'Domine', serif;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed; }
+  @media all and (max-width: 1156px) {
+    .site-header {
+      background: url(../assets/img/medium10.jpg) center/cover no-repeat; } }
+  @media all and (max-width: 768px) {
+    .site-header {
+      background: url(../assets/img/testheadertelefon.jpg) center/cover no-repeat; } }
+  .site-header__nav {
+    width: 100%;
+    position: absolute;
+    text-align: center; }
+  .site-header__logo {
+    position: absolute;
+    font-size: 3.2rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    z-index: 999; }
+    .site-header__logo:hover {
+      color: #e0727ddc; }
+    @media all and (max-width: 880px) {
+      .site-header__logo {
+        display: none; } }
+  .site-header__hamburgerMenu {
+    position: absolute;
+    font-size: 3.2rem;
+    padding-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    color: whitesmoke;
+    text-decoration: none;
+    display: none;
+    z-index: 999; }
+    @media all and (max-width: 768px) {
+      .site-header__hamburgerMenu {
+        display: block; } }
+
+.site-section {
+  padding-top: 3rem; }
+
+.site-offer {
+  padding-top: 3rem;
+  background-color: #e0727d44;
+  color: black;
+  text-align: center; }
+
+.site-gallery {
+  padding: 2rem; }
+
+.site-localization {
+  padding: 30px;
+  background-color: #e0727d44; }
+  .site-localization__h2 {
+    padding-bottom: 3rem; }
+
+.site-contact {
+  padding: 20px;
+  color: black;
+  position: relative; }
+  .site-contact__h2 {
+    padding-top: 3rem;
+    margin-bottom: 20px; }
+
+.site-footer {
+  position: relative;
+  max-height: 40vh;
+  background-color: whitesmoke; }
+  .site-footer__h2 {
+    padding-top: 3rem;
+    color: black; }
+  .site-footer__address {
+    color: black;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1.8rem; }
+  .site-footer__copyright {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2rem; }
+
+/*# sourceMappingURL=main.css.map */

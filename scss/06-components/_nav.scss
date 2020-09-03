@@ -1,0 +1,60 @@
+.nav{
+    background-color: rgba(255, 255, 255, 0.199);
+    // background-color: rgba(255, 255, 255, 0.452);
+    display: flex;
+    height: 7rem;
+    justify-content: flex-end;
+    // justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+
+    @include medium880 {
+        justify-content: space-evenly;
+        height: 6rem;
+    }
+
+    
+
+    &__item{
+        font-size: 3.2rem;
+        // padding: 2rem;
+        transition: all .25s;
+        @include medium1156{
+            font-size: 2.7rem;
+        }
+        @include medium880{
+            font-size: 2.2rem;
+        }
+        @include medium {
+            display: none;
+        }
+        &:hover{
+            // background-color:rgba(66, 66, 62, 0.719);
+            font-size: 3.7rem;
+
+            @include medium1156{
+                font-size: 3.2rem;
+            }
+            @include medium880{
+                font-size: 2.7rem;
+            }
+        }
+    }
+    &__link{
+        z-index: 99999999999;
+        font-family: 'Domine', serif;
+        // padding: 2rem;
+        margin-top: 2rem;
+        margin-right: 3rem;
+        text-decoration: none;
+        display: block;
+        color: whitesmoke;
+        
+        // color:rgba(207, 181, 59,0.7);
+        // color: #e0727d;
+        &:hover{
+            // color: whitesmoke;
+            color: #e0727ddc;
+            text-decoration: none;
+        }
+    }
+}
